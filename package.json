@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^0.2.0",
     "@modulz/radix-icons": "^3.2.0",
     "framer-motion": "^2.9.4",
     "next": "10.0.0",
