@@ -1,5 +1,3 @@
-import { AnimatePresence, motion } from 'framer-motion'
-
 interface NavLinkProps {
   icon: React.ReactElement
   text: string
