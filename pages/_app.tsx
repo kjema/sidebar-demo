@@ -1,4 +1,5 @@
-import '@assets/main.css'
+import '@assets/base.css'
+import 'tailwindcss/tailwind.css'
 
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'

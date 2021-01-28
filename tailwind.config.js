@@ -4,16 +4,8 @@ function px(pixels) {
 
 module.exports = {
   important: true,
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    content: [
-      './pages/**/*.{js,ts,jsx,tsx}',
-      './components/**/*.{js,ts,jsx,tsx}',
-    ],
-  },
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'media', // 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -50,5 +42,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [],
 }
