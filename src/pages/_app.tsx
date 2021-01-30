@@ -4,7 +4,7 @@ import 'tailwindcss/tailwind.css'
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 
-import Sidebar from '@components/core/Sidebar/Sidebar.tsx'
+import Sidebar from 'src/components/core/Sidebar/Sidebar'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
