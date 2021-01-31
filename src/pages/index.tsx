@@ -1,16 +1,16 @@
-import Head from 'next/head'
+import { Container } from '@components/container'
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1>Hello!</h1>
-      </main>
-    </div>
+    <Container>
+      <h1>Hey, I’m Marcus</h1>
+      <h2>Hello</h2>
+      <h3>Hello</h3>
+      <p>
+        The animate prop can accept an object of values. When one of them
+        changes, the motion component will automatically animate to the new
+        state.
+      </p>
+    </Container>
   )
 }

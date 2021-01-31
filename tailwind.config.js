@@ -1,46 +1,65 @@
-function px(pixels) {
-  return `${pixels / 16}rem`
-}
+const defaultTheme = require('tailwindcss/defaultTheme')
+// const colors = require('tailwindcss/colors')
 
 module.exports = {
-  important: true,
+  important: false,
   purge: [
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: 'media', // 'media' or 'class'
+  darkMode: 'class', // 'media' or 'class'
   theme: {
-    extend: {
-      colors: {
-        primary: 'var(--primary)',
-        'primary-2': 'var(--primary-2)',
-        secondary: 'var(--secondary)',
-        'secondary-2': 'var(--secondary-2)',
-        hover: 'var(--hover)',
-        'hover-1': 'var(--hover-1)',
-        'hover-2': 'var(--hover-2)',
-        'accents-0': 'var(--accents-0)',
-        'accents-1': 'var(--accents-1)',
-        'accents-2': 'var(--accents-2)',
-        'accents-3': 'var(--accents-3)',
-        'accents-4': 'var(--accents-4)',
-        'accents-5': 'var(--accents-5)',
-        'accents-6': 'var(--accents-6)',
-        'accents-7': 'var(--accents-7)',
-        'accents-8': 'var(--accents-8)',
-        'accents-9': 'var(--accents-9)',
-        violet: 'var(--violet)',
-        'violet-light': 'var(--violet-light)',
-        pink: 'var(--pink)',
-        cyan: 'var(--cyan)',
-        blue: 'var(--blue)',
-        green: 'var(--green)',
-        red: 'var(--red)',
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+
+      black: '#000',
+      white: '#fff',
+
+      gray: {
+        50: 'hsl(0, 0%, 98%)',
+        100: 'hsl(0, 0%, 93%)',
+        200: 'hsl(0, 0%, 60%)',
+        300: 'hsl(0, 0%, 50%)',
+        // 400: '#ced4da',
+        // 500: '#adb5bd',
+        // 600: '#868e96',
+        // 700: '#495057',
+        800: '#333333',
+        900: '#111111',
       },
+
+      // 50: '#f8f9fa',
+      // 100: '#f1f3f5',
+      // 200: '#e9ecef',
+      // 300: '#dee2e6',
+      // 400: '#ced4da',
+      // 500: '#adb5bd',
+      // 600: '#868e96',
+      // 700: '#495057',
+      // 800: '#343a40',
+      // 900: '#212529',
+
+      // 50: '#fafafa',
+      // 100: '#f5f5f5',
+      // 200: '#e5e5e5',
+      // 300: '#d4d4d4',
+      // 400: '#a3a3a3',
+      // 500: '#737373',
+      // 600: '#525252',
+      // 700: '#404040',
+      // 800: '#262626',
+      // 900: '#171717',
+    },
+    extend: {
       textColor: {
         base: 'var(--text-base)',
         primary: 'var(--text-primary)',
         secondary: 'var(--text-secondary)',
+      },
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        mono: ['Input', 'Menlo', ...defaultTheme.fontFamily.mono],
       },
     },
   },

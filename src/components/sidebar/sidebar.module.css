@@ -1,0 +1,11 @@
+.sidebarItems {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .sidebarItems {
+    height: auto !important;
+  }
+}

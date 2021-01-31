@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next,
+#__root,
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* html {
+  touch-action: manipulation;
+  scroll-behavior: smooth;
+} */
+
+h1 {
+  @apply mb-5 text-4xl font-black text-gray-900;
+}
+
+h2 {
+  @apply mb-5 text-2xl font-bold text-gray-900;
+}
+
+h3 {
+  @apply mb-4 text-lg font-bold text-gray-900;
+}
+
+span.lead {
+  @apply block text-2xl font-normal leading-9 text-gray-800 mb-9;
+}
+
+p {
+  @apply mb-5 font-normal text-gray-800;
+}
+
+p code,
+div > code,
+li > code {
+  @apply font-mono text-sm font-semibold;
+}
