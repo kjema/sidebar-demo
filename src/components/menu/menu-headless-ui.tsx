@@ -34,7 +34,7 @@ const variants: Variants = {
 export default function MenuHeadlessUI({}: MenuHeadlessUIProps) {
   return (
     <Menu>
-      {({ open }: { open: boolean }) => (
+      {({ open }) => (
         <div className="inline-block relative">
           <Menu.Button className="flex justify-center items-center p-1 w-8 h-8 rounded border border-gray-200 hover:bg-gray-100 focus:outline-none">
             <DotsHorizontalIcon />
@@ -52,7 +52,7 @@ export default function MenuHeadlessUI({}: MenuHeadlessUIProps) {
                 animate="visible"
                 exit="hidden"
                 variants={variants}
-                className="absolute left-0 p-1 mt-1 w-44 text-xs font-normal bg-white rounded border border-gray-200 shadow-sm origin-top-left focus:outline-none"
+                className="absolute left-0 p-1 mt-1 w-44 text-[12px] font-normal bg-white rounded border border-gray-200 shadow-sm origin-top-left focus:outline-none"
               >
                 <Menu.Item>
                   {({ active }) => (
