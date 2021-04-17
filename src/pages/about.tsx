@@ -1,6 +1,6 @@
-import H1 from '@shared/headings/h1'
-import H2 from '@shared/headings/h2'
-import Page from '@shared/Page'
+import H1 from 'shared/headings/h1'
+import H2 from 'shared/headings/h2'
+import Page from 'shared/Page'
 
 export default function Index() {
   return (

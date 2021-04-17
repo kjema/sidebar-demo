@@ -1,6 +1,6 @@
-import BlogLink from '@shared/headings/blog-link'
-import Page from '@shared/Page'
-import Spacer from '@shared/spacer'
+import BlogLink from 'shared/headings/blog-link'
+import Page from 'shared/Page'
+import Spacer from 'shared/spacer'
 
 export default function Home() {
   return (

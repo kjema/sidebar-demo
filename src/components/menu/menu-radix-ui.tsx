@@ -1,7 +1,7 @@
 import { DotsHorizontalIcon } from '@modulz/radix-icons'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { AnimatePresence, motion, Variants } from 'framer-motion'
-import * as React from 'react'
+import { useState } from 'react'
 
 // const cubicBezier = [0.4, 0, 0.2, 1]
 const variants: Variants = {
@@ -39,7 +39,7 @@ const variants: Variants = {
 // }
 
 export default function MenuRadixUI() {
-  const [open, setOpen] = React.useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false)
 
   const handleOpen = (open: boolean) => setOpen(open)
 
