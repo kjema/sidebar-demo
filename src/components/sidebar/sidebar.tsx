@@ -46,7 +46,7 @@ export function Sidebar() {
         <ul className="sm:block sm:flex-1">
           {[
             { text: 'Home', icon: <HomeIcon />, href: '/' },
-            { text: 'Learning', icon: <ReaderIcon />, href: '/learning' },
+            { text: 'Blog', icon: <ReaderIcon />, href: '/blog' },
             { text: 'Code Snippets', icon: <CodeIcon />, href: '/snippets' },
           ].map(({ text, icon, href }) => (
             <NavLink key={text} text={text} icon={icon} href={href} />

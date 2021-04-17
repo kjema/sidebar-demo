@@ -1,5 +1,5 @@
+import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
-import NextLink, { LinkProps } from 'next/link'
 
 interface ActiveLinkProps extends LinkProps {
   activeClassName: string
@@ -29,10 +29,10 @@ export function ActiveLink({
   }
 
   return (
-    <NextLink href={href} {...rest}>
+    <Link href={href} {...rest}>
       <a className={currentClassName} style={style}>
         {children({ isActive })}
       </a>
-    </NextLink>
+    </Link>
   )
 }

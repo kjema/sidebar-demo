@@ -1,16 +1,89 @@
-import { Container } from '@components/container'
+import BlogLink from '@shared/headings/blog-link'
+import Page from '@shared/Page'
+import Spacer from '@shared/spacer'
 
 export default function Home() {
   return (
-    <Container>
-      <h1>Hey, I’m Marcus</h1>
-      <h2>Hello</h2>
-      <h3>Hello</h3>
+    <Page meta={{ title: 'Blog', description: '' }}>
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
       <p>
-        The animate prop can accept an object of values. When one of them
-        changes, the motion component will automatically animate to the new
-        state.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
       </p>
-    </Container>
+      <Spacer y={16} />
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
+      </p>
+      <Spacer y={16} />
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
+      </p>
+      <Spacer y={16} />
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
+      </p>
+      <Spacer y={16} />
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
+      </p>
+      <Spacer y={16} />
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
+      </p>
+      <Spacer y={16} />
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
+      </p>
+      <Spacer y={16} />
+      <BlogLink href="/blog/markdown-with-next">
+        Markdown/MDX with Next.js
+      </BlogLink>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        molestias alias cumque doloribus, quidem blanditiis laboriosam dolore
+        vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
+        quibusdam inventore?
+      </p>
+    </Page>
   )
 }
