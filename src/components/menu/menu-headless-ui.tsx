@@ -35,8 +35,8 @@ export default function MenuHeadlessUI({}: MenuHeadlessUIProps) {
   return (
     <Menu>
       {({ open }) => (
-        <div className="inline-block relative">
-          <Menu.Button className="flex justify-center items-center p-1 w-8 h-8 rounded border border-gray-200 hover:bg-gray-100 focus:outline-none">
+        <div className="relative inline-block">
+          <Menu.Button className="flex h-8 w-8 items-center justify-center rounded border border-gray-200 p-1 hover:bg-gray-100 focus:outline-none">
             <DotsHorizontalIcon />
           </Menu.Button>
           <AnimatePresence>
@@ -52,14 +52,14 @@ export default function MenuHeadlessUI({}: MenuHeadlessUIProps) {
                 animate="visible"
                 exit="hidden"
                 variants={variants}
-                className="absolute left-0 p-1 mt-1 w-44 text-[12px] font-normal bg-white rounded border border-gray-200 shadow-sm origin-top-left focus:outline-none"
+                className="absolute left-0 mt-1 w-44 origin-top-left rounded border border-gray-200 bg-white p-1 text-[12px] font-normal shadow-sm focus:outline-none"
               >
                 <Menu.Item>
                   {({ active }) => (
                     <a
                       className={`${
                         active ? 'bg-gray-100' : ''
-                      } flex items-center px-4 py-1 whitespace-no-wrap rounded cursor-default`}
+                      } whitespace-no-wrap flex cursor-default items-center rounded px-4 py-1`}
                       href="#"
                     >
                       Account Settings
@@ -81,7 +81,7 @@ export default function MenuHeadlessUI({}: MenuHeadlessUIProps) {
                     <a
                       className={`${
                         active ? 'bg-gray-100' : ''
-                      } flex items-center px-4 py-1 whitespace-no-wrap rounded cursor-default`}
+                      } whitespace-no-wrap flex cursor-default items-center rounded px-4 py-1`}
                       href="#"
                     >
                       Log out

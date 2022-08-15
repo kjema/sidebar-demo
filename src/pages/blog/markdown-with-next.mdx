@@ -1,4 +1,4 @@
-import Page from 'shared/Page'
+import PageLayout from 'components/page-layout'
 
 export const meta = {
   title: 'Markdown/MDX with Next.js',
@@ -7,4 +7,4 @@ export const meta = {
 
 # I **love** using [Next.js](https://nextjs.org/)
 
-export default ({ children }) => <Page meta={meta}>{children}</Page>
+export default ({ children }) => <PageLayout meta={meta}>{children}</PageLayout>

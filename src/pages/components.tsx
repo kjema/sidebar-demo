@@ -1,8 +1,8 @@
 import MenuHeadlessUI from 'components/menu/menu-headless-ui'
 import MenuRadixUI from 'components/menu/menu-radix-ui'
+import PageLayout from 'components/page-layout'
 import H1 from 'shared/headings/h1'
 import H2 from 'shared/headings/h2'
-import Page from 'shared/Page'
 import Spacer from 'shared/spacer'
 
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
 
 export default function Components({}: Props) {
   return (
-    <Page>
+    <PageLayout>
       <H1>Components</H1>
       <Spacer y={16} />
       <H2>Dropdown Menu</H2>
@@ -30,6 +30,6 @@ export default function Components({}: Props) {
           <MenuHeadlessUI />
         </div>
       </div>
-    </Page>
+    </PageLayout>
   )
 }

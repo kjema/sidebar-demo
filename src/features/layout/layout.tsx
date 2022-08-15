@@ -9,7 +9,7 @@ export function Layout({ children }: LayoutProps) {
     <>
       <Nav />
       <main className="w-screen">
-        <div className="px-6 pt-36 pb-20 mx-auto max-w-3xl lg:px-0">
+        <div className="mx-auto max-w-3xl px-6 pt-36 pb-20 lg:px-0">
           {children}
         </div>
       </main>

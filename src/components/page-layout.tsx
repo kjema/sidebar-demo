@@ -11,7 +11,7 @@ const pageMeta = {
   description: `Front-end developer.`,
 }
 
-export default function Page({ meta = pageMeta, children }: PropsProps) {
+export default function PageLayout({ meta = pageMeta, children }: PropsProps) {
   return (
     <>
       <Head>

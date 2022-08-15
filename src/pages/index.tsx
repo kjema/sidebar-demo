@@ -1,10 +1,10 @@
+import PageLayout from 'components/page-layout'
 import BlogLink from 'shared/headings/blog-link'
-import Page from 'shared/Page'
 import Spacer from 'shared/spacer'
 
 export default function Home() {
   return (
-    <Page meta={{ title: 'Blog', description: '' }}>
+    <PageLayout meta={{ title: 'Blog', description: '' }}>
       <BlogLink href="/blog/markdown-with-next">
         Markdown/MDX with Next.js
       </BlogLink>
@@ -84,6 +84,6 @@ export default function Home() {
         vitae unde quaerat labore sequi quae architecto tempora ea quam ratione
         quibusdam inventore?
       </p>
-    </Page>
+    </PageLayout>
   )
 }

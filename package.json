@@ -6,28 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "tsc": "tsc --noEmit"
+    "format": "prettier --write .",
+    "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@headlessui/react": "^1.0.0",
-    "@mdx-js/loader": "^1.6.22",
+    "@headlessui/react": "^1.5.0",
+    "@mdx-js/loader": "^2.1.2",
     "@modulz/radix-icons": "^4.0.0",
-    "@next/mdx": "^10.1.3",
-    "@radix-ui/react-dropdown-menu": "^0.0.17",
-    "framer-motion": "^4.1.4",
-    "next": "10.1.3",
-    "next-themes": "0.0.14",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@next/mdx": "^12.2.5",
+    "@radix-ui/react-dropdown-menu": "^1.0.0",
+    "framer-motion": "^7.1.1",
+    "next": "12.2.5",
+    "next-themes": "0.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.41",
-    "@types/react": "^17.0.3",
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.10",
-    "prettier": "^2.2.1",
-    "prettier-plugin-organize-imports": "^1.1.1",
-    "tailwindcss": "^2.1.1",
-    "typescript": "^4.2.4"
+    "@types/node": "^18.7.5",
+    "@types/react": "^18.0.17",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.7",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.6.2"
   }
 }

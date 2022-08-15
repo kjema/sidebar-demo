@@ -13,7 +13,7 @@ export default function Spacer({ x = 1, y = 1 }: SpacerProps) {
 
   return (
     <div
-      className="block w-px h-px"
+      className="block h-px w-px"
       style={{ marginLeft: left, marginTop: top }}
     ></div>
   )

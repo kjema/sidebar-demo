@@ -1,4 +1,4 @@
-import Page from 'shared/Page'
+import PageLayout from 'components/page-layout'
 
 interface HeadersProps {
   children?: React.ReactNode
@@ -7,7 +7,7 @@ interface HeadersProps {
 
 export default function Headers({}: HeadersProps) {
   return (
-    <Page meta={{ title: 'Code Snippets', description: '' }}>
+    <PageLayout meta={{ title: 'Code Snippets', description: '' }}>
       <h1>Code Snippets</h1>
       <span className="lead">
         These are a collection of code snippets I've used in the past and saved.
@@ -15,6 +15,6 @@ export default function Headers({}: HeadersProps) {
       <p>
         This is a sample text with a <code>code</code> block.
       </p>
-    </Page>
+    </PageLayout>
   )
 }

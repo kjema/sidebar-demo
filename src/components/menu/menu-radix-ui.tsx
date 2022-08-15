@@ -44,9 +44,9 @@ export default function MenuRadixUI() {
   const handleOpen = (open: boolean) => setOpen(open)
 
   return (
-    <div className="inline-block relative">
+    <div className="relative inline-block">
       <DropdownMenu.Root open={open} onOpenChange={handleOpen}>
-        <DropdownMenu.Trigger className="flex justify-center items-center p-1 w-8 h-8 rounded border border-gray-200 focus:outline-none">
+        <DropdownMenu.Trigger className="flex h-8 w-8 items-center justify-center rounded border border-gray-200 p-1 focus:outline-none">
           <DotsHorizontalIcon />
         </DropdownMenu.Trigger>
         <AnimatePresence>
@@ -54,7 +54,7 @@ export default function MenuRadixUI() {
             <DropdownMenu.Content
               forceMount
               align="start"
-              className="p-1 mt-1 w-44 text-xs font-normal bg-white rounded border border-gray-200 shadow-sm origin-top-left focus:outline-none"
+              className="mt-1 w-44 origin-top-left rounded border border-gray-200 bg-white p-1 text-xs font-normal shadow-sm focus:outline-none"
               as={motion.div}
               initial="hidden"
               animate="visible"
@@ -62,14 +62,14 @@ export default function MenuRadixUI() {
               variants={variants}
             >
               <DropdownMenu.Item
-                className="flex py-1 px-4 rounded cursor-default whitespace-no-wrap focus:outline-none focus:bg-gray-100"
+                className="whitespace-no-wrap flex cursor-default rounded py-1 px-4 focus:bg-gray-100 focus:outline-none"
                 onSelect={() => console.log('Account Settings')}
               >
                 Account Settings
               </DropdownMenu.Item>
               <DropdownMenu.Separator className="m-1 h-px bg-gray-300" />
               <DropdownMenu.Item
-                className="flex py-1 px-4 rounded cursor-default whitespace-no-wrap focus:outline-none focus:bg-gray-100"
+                className="whitespace-no-wrap flex cursor-default rounded py-1 px-4 focus:bg-gray-100 focus:outline-none"
                 onSelect={() => console.log('Log out')}
               >
                 Log out

@@ -6,16 +6,16 @@ import { ActiveLink } from './active-link'
 export default function Nav() {
   const { theme, setTheme } = useTheme()
   return (
-    <nav className="fixed top-0 left-0 flex items-center w-screen h-16 bg-white dark:bg-gray-900 shadow-borderLight dark:shadow-borderDark">
-      <div className="flex items-center flex-grow max-w-3xl px-6 mx-auto lg:px-0">
+    <nav className="fixed top-0 left-0 flex h-16 w-screen items-center bg-white shadow-borderLight dark:bg-gray-900 dark:shadow-borderDark">
+      <div className="mx-auto flex max-w-3xl flex-grow items-center px-6 lg:px-0">
         <Link href="/">
-          <a className="text-sm font-black tracking-wide uppercase">MK</a>
+          <a className="text-sm font-black uppercase tracking-wide">MK</a>
         </Link>
-        <ul className="flex flex-1 h-16 mx-4">
+        <ul className="mx-4 flex h-16 flex-1">
           <li className="h-16">
             <ActiveLink
               href="/components"
-              className="inline-flex h-full px-4 text-sm font-semibold transition-opacity duration-200 ease-in-out place-items-center hover:opacity-100"
+              className="inline-flex h-full place-items-center px-4 text-sm font-semibold transition-opacity duration-200 ease-in-out hover:opacity-100"
               activeClassName=""
               inactiveClassName="opacity-50"
             >
@@ -25,7 +25,7 @@ export default function Nav() {
           <li>
             <ActiveLink
               href="/snippets"
-              className="inline-flex h-full px-4 text-sm font-semibold transition-opacity duration-200 ease-in-out place-items-center hover:opacity-100"
+              className="inline-flex h-full place-items-center px-4 text-sm font-semibold transition-opacity duration-200 ease-in-out hover:opacity-100"
               activeClassName=""
               inactiveClassName="opacity-50"
             >
@@ -35,7 +35,7 @@ export default function Nav() {
           <li className="h-16">
             <ActiveLink
               href="/about"
-              className="inline-flex h-full px-4 text-sm font-semibold transition-opacity duration-200 ease-in-out place-items-center hover:opacity-100"
+              className="inline-flex h-full place-items-center px-4 text-sm font-semibold transition-opacity duration-200 ease-in-out hover:opacity-100"
               activeClassName=""
               inactiveClassName="opacity-50"
             >
@@ -44,7 +44,7 @@ export default function Nav() {
           </li>
         </ul>
         <button
-          className="inline-flex items-center justify-center w-6 h-6 rounded-full cursor-default focus:outline-none hover:bg-gray-50 active:bg-gray-200 dark:hover:bg-gray-800"
+          className="inline-flex h-6 w-6 cursor-default items-center justify-center rounded-full hover:bg-gray-50 focus:outline-none active:bg-gray-200 dark:hover:bg-gray-800"
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
           <SunIcon />
